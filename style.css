@@ -1,5 +1,6 @@
+/* General Styles */
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -11,9 +12,11 @@ body {
   padding: 0 20px;
 }
 
+/* Header Section */
 header {
   background-color: #fff;
   padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -25,7 +28,7 @@ header h1 {
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px 0 0;
   text-align: center;
 }
 
@@ -38,6 +41,113 @@ nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+nav a:hover {
+  color: #007BFF;
+}
+
+/* Hero Section */
 .hero {
+  height: 100vh;
+  background: url('your-image-path.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.hero .button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .button:hover {
+  background-color: gray;
+  color: white;
+}
+
+/* Mission and Vision Section */
+#mission-vision {
+  padding: 50px 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+footer .button:hover {
+  background-color: #0056b3;
+}
