@@ -144,3 +144,41 @@ button:hover {
     font-size: 0.9em;
     margin: 5px 0 20px;
 }
+/* About Page Styles */
+.about {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+.about h2 {
+    color: #f8a73e;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    color: #f8a73e; 
+    font-size: 1.5em; 
+    margin-top: 30px; 
+    margin-bottom: 10px; 
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about ul {
+    list-style-type: disc;
+ padding-left: 20px; 
+    margin-bottom: 20px; 
+}
+
+.about ul li {
+    margin-bottom: 10px; 
+    color: #444; 
+}
