@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Ozamiz City</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Ozamiz City</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="gallery">
+            <h2>Top Tourist Spots in Ozamiz City</h2>
+            <div class="tabs">
+                <button class="tab-button" onclick="showTab('aquamarine')">Misamis Occidental Aquamarine Park</button>
+                <button class="tab-button" onclick="showTab('cathedral')">Ozamiz City Cathedral</button>
+                <button class="tab-button" onclick="showTab('mount')">Mount Malindang Range</button>
+            </div>
+
+            <div id="aquamarine" class="tab active">
+                <h3>Misamis Occidental Aquamarine Park</h3>
+                <div class="photo-gallery">
+                    <img src="aquamarine1.jpg" alt="Aquamarine Park View 1">
+                    <p>Beautiful view of the Aquamarine Park's crystal-clear waters.</p>
+                    <img src="aquamarine2.jpg" alt="Aquamarine Park View 2">
+                    <p>Visitors enjoying various water activities at the park.</p>
+                    <img src="aquamarine3.jpg" alt="Aquamarine Park View 3">
+                    <p>Scenic sunset view from the Aquamarine Park.</p>
+                </div>
+            </div>
+
+            <div id="cathedral" class="tab">
+                <h3>Ozamiz City Cathedral</h3>
+                <div class="photo-gallery">
+                    <img src="cathedral1.jpg" alt="Ozamiz City Cathedral View 1">
+                    <p>The stunning facade of the Ozamiz City Cathedral.</p>
+                    <img src="cathedral2.jpg" alt="Ozamiz City Cathedral View 2">
+                    <p>Interior view showcasing the beautiful stained glass windows.</p>
+                    <img src="cathedral3.jpg" alt="Ozamiz City Cathedral View 3">
+                    <p>Evening view of the cathedral illuminated at night.</p>
+                </div>
+            </div>
+
+            <div id="mount" class="tab">
+                <h3>Mount Malindang Range Natural Park</h3>
+                <div class="photo-gallery">
+                    <img src="mount1.jpg" alt="Mount Malindang View 1">
+                    <p>Panoramic view of the lush greenery at Mount Malindang.</p>
+                    <img src="mount2.jpg" alt="Mount Malindang View 2">
+                    <p>Hikers enjoying the scenic trails of Mount Malindang.</p>
+                    <img src="mount3.jpg" alt="Mount Malindang View 3">
+                    <p>Stunning sunrise view from the peak of Mount Malindang.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
