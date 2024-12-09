@@ -141,22 +141,22 @@ button:hover {
 }
 
 .photo-gallery {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping of items */
-    justify-content: center; /* Center the items */
-    gap: 15px; /* Space between images */
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 15px; /* Space between items */
+    margin-top: 20px; /* Add some space above the gallery */
 }
 
 .photo-gallery img {
     width: 100%; /* Make images responsive */
-    max-width: 300px; /* Set a maximum width for uniformity */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Optional: Add rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
 }
 
 .photo-gallery p {
-    width: 100%; /* Ensure captions take full width */
+    grid-column: span 1; /* Ensure captions take full width of the column */
+    text-align: center; /* Center align captions */
     margin-top: 5px; /* Space between image and caption */
     font-size: 0.9em; /* Smaller font for captions */
     color: #666; /* Lighter color for captions */
@@ -237,16 +237,17 @@ footer p {
 
 /* Optional: Add media query for responsiveness */
 @media (max-width: 768px) {
-    .core-value {
-        flex: 1 1 100%; /* Stack vertically on smaller screens */
-    }
-
-    .tab-button {
-        flex: 1; /* Make buttons take equal space on smaller screens */
-        margin: 5px 0; /* Add margin for spacing */
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
     }
 
     .photo-gallery img {
         max-width: 100%; /* Allow images to take full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
     }
 }
