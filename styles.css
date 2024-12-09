@@ -161,7 +161,6 @@ button:hover {
     font-size: 0.9em; /* Smaller font for captions */
     color: #666; /* Lighter color for captions */
 }
-
 /* About Page Styles */
 .about {
     padding: 40px 20px;
@@ -238,8 +237,9 @@ footer p {
 /* Optional: Add media query for responsiveness */
 @media (max-width: 768px) {
     .photo-gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        grid-template-columns: 1fr; /* 1 column on smaller screens */
     }
+}
 
     .photo-gallery img {
         max-width: 100%; /* Allow images to take full width on small screens */
