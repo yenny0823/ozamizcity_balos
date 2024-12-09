@@ -133,29 +133,33 @@ button:hover {
 }
 
 .tab {
-    display: none;
+    display: none; /* Hide all tabs by default */
 }
 
 .tab.active {
-    display: block;
+    display: block; /* Show the active tab */
 }
 
 .photo-gallery {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center the items */
+    gap: 15px; /* Space between images */
 }
 
 .photo-gallery img {
-    width: 80%;
-    max-width: 600px;
-    margin-bottom: 10px;
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Set a maximum width for uniformity */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
 }
 
 .photo-gallery p {
-    color: #444;
-    font-size: 0.9em;
-    margin: 5px 0 20px;
+    width: 100%; /* Ensure captions take full width */
+    margin-top: 5px; /* Space between image and caption */
+    font-size: 0.9em; /* Smaller font for captions */
+    color: #666; /* Lighter color for captions */
 }
 
 /* About Page Styles */
@@ -175,7 +179,6 @@ button:hover {
     margin-bottom: 20px;
     text-align: center;
 }
-
 .about h3 {
     color: #f8a73e;
     font-size: 1.5em;
@@ -212,6 +215,7 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
+
 /* Core Values Styles */
 .core-values-container {
     display: flex; 
@@ -235,5 +239,14 @@ footer p {
 @media (max-width: 768px) {
     .core-value {
         flex: 1 1 100%; /* Stack vertically on smaller screens */
+    }
+
+    .tab-button {
+        flex: 1; /* Make buttons take equal space on smaller screens */
+        margin: 5px 0; /* Add margin for spacing */
+    }
+
+    .photo-gallery img {
+        max-width: 100%; /* Allow images to take full width on small screens */
     }
 }
