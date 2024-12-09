@@ -234,6 +234,30 @@ footer p {
     background-color: white; /* Optional: Add a background color */
 }
 
+.card {
+    background-color: white; /* Card background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.card p {
+    padding: 10px; /* Padding for the caption */
+    text-align: center; /* Center align captions */
+    font-size: 0.9em; /* Smaller font for captions */
+    color: #666; /* Lighter color for captions */
+}
+
 /* Optional: Add media query for responsiveness */
 @media (max-width: 768px) {
     .photo-gallery {
