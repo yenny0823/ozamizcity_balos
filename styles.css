@@ -212,6 +212,7 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
+/* Core Values Styles */
 .core-values-container {
     display: flex; 
     justify-content: space-between; 
@@ -219,11 +220,20 @@ footer p {
 }
 
 .core-value {
-    flex: 1; 
+    flex: 1; /* Allow each core value to grow equally */
+    min-width: 150px; /* Set a minimum width for each core value */
     margin: 10px; 
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    background-color: white; /* Optional: Add a background color */
+}
+
+/* Optional: Add media query for responsiveness */
+@media (max-width: 768px) {
+    .core-value {
+        flex: 1 1 100%; /* Stack vertically on smaller screens */
+    }
 }
