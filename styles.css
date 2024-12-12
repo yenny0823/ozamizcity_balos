@@ -23,13 +23,9 @@ body::before {
 }
 /* Header Styles */
 header {
-    background-image: url('boulevard.PNG'); /* Replace with your own image URL */
-    background-size: cover; /* Scale the image to cover the entire header */
-    background-position: center; /* Center the image horizontally and vertically */
-    background-repeat: no-repeat; /* Don't repeat the image */
-    height: 100px; /* Set the height of the header */
-    padding: 20px; /* Add some padding to the header */
-    text-align: center; /* Center the text in the header */
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
 }
 .header-container {
     display: flex;
