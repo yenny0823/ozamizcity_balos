@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-image: linear-gradient(to bottom, #ffd7be, #fff); /* Soft orange gradient background */
+    background-color: #ffd7be !important; /* Soft orange background color */
 }
 /* Header Styles */
 header {
