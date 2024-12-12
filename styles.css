@@ -18,7 +18,7 @@ body::before {
     background-size: 200px 200px; /* Set the size of the image */
     background-position: 0 0; /* Start the image from the top-left corner */
     background-repeat: repeat; /* Tile the image */
-    opacity: 0.5; /* Set the opacity to 50% */
+    opacity: 0.3; /* Set the opacity to 50% */
     z-index: -1; /* Move the pseudo-element behind the content */
 }
 /* Header Styles */
