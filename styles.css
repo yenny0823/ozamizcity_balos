@@ -23,7 +23,7 @@ body::before {
 }
 /* Header Styles */
 header {
-    background-image: url('boulevard.png'); /* Replace with your own image URL */
+    background-image: url('boulevard.PNG'); /* Replace with your own image URL */
     background-size: cover; /* Scale the image to cover the entire header */
     background-position: center; /* Center the image horizontally and vertically */
     background-repeat: no-repeat; /* Don't repeat the image */
