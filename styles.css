@@ -43,7 +43,11 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: #f8a73e;
+    background-color: #f8a73e; /* Fallback color */
+    background-image: url('Ozamiz_City_Hall.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     text-align: center;
     padding: 40px 20px;
     color: black;
